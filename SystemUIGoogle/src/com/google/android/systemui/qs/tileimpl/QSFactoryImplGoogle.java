@@ -49,6 +49,8 @@ import com.android.systemui.qs.tiles.ScreenRecordTile;
 import com.android.systemui.qs.tiles.UiModeNightTile;
 import com.android.systemui.qs.tiles.WifiTile;
 import com.android.systemui.qs.tiles.WorkModeTile;
+import com.android.systemui.qs.tiles.CaffeineTile;
+import com.android.systemui.qs.tiles.HeadsUpTile;
 import com.android.systemui.util.leak.GarbageMonitor;
 import com.google.android.systemui.qs.tiles.BatterySaverTileGoogle;
 import com.google.android.systemui.qs.tiles.ReverseChargingTile;
@@ -97,6 +99,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<QRCodeScannerTile> qrCodeScannerTileProvider,
             Provider<OneHandedModeTile> oneHandedModeTileProvider,
             Provider<ColorCorrectionTile> colorCorrectionTileProvider,
+            Provider<CaffeineTile> caffeineTileProvider,
+            Provider<HeadsUpTile> headsUpTileProvider,
             Provider<ReverseChargingTile> reverseChargingTileProvider) {
         super(qsHostLazy,
                 customTileBuilderProvider,
@@ -128,6 +132,8 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 quickAccessWalletTileProvider,
                 qrCodeScannerTileProvider,
                 oneHandedModeTileProvider,
+                caffeineTileProvider,
+                headsUpTileProvider,
                 colorCorrectionTileProvider);
         mReverseChargingTileProvider = reverseChargingTileProvider;
         mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
