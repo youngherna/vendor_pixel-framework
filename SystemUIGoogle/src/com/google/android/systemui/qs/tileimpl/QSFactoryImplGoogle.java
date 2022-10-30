@@ -99,9 +99,9 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
             Provider<QRCodeScannerTile> qrCodeScannerTileProvider,
             Provider<OneHandedModeTile> oneHandedModeTileProvider,
             Provider<ColorCorrectionTile> colorCorrectionTileProvider,
+            Provider<ReverseChargingTile> reverseChargingTileProvider,
             Provider<CaffeineTile> caffeineTileProvider,
-            Provider<HeadsUpTile> headsUpTileProvider,
-            Provider<ReverseChargingTile> reverseChargingTileProvider) {
+            Provider<HeadsUpTile> headsUpTileProvider) {
         super(qsHostLazy,
                 customTileBuilderProvider,
                 wifiTileProvider,
@@ -132,9 +132,9 @@ public class QSFactoryImplGoogle extends QSFactoryImpl {
                 quickAccessWalletTileProvider,
                 qrCodeScannerTileProvider,
                 oneHandedModeTileProvider,
+                colorCorrectionTileProvider,
                 caffeineTileProvider,
-                headsUpTileProvider,
-                colorCorrectionTileProvider);
+                headsUpTileProvider);
         mReverseChargingTileProvider = reverseChargingTileProvider;
         mBatterySaverTileGoogleProvider = batterySaverTileGoogleProvider;
     }
